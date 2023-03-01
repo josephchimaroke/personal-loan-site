@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header-sec {
+    /* border: 2px solid red; */
+    height: 640px;
+    background: linear-gradient(rgba(40, 50, 37, 0.6),rgba(0, 0, 0, 0.627)),url(./image/loan-Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white; 
+}
+
+.logo {
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    /* border: 2px solid white; */
+   text-align: center;
+   font-size: 25px;
+   font-family: serif;
+   margin-top: 5em;
+}
+
+.header-content button {
+    background-color: rgb(62, 175, 62);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 2em;
+    border-style: none;
+    margin-top: 2em;
+}
+.brand-logo {
+    margin-top: 1em;
+}
+
+.header-sectwo {
+    /* border: 2px solid rgb(0, 98, 255); */
+    display: flex;
+    gap: 200px;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    margin-top: 140px;
+    font-size: 20px;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN SECTION */
+.headcard {
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 15px;
+    margin-top: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards {
+    /* border: 2px solid blue; */
+    display: flex;
+    margin-top: 15px;
+    padding-top: 20px;
+    text-align: center;
+    gap: 10px;
+   font-size: 20px;
+}
+
+.card-content p {
+    /* border: 2px solid green; */
+    margin-top: -60px;
+    padding: 5rem;
+}
+
+.card-content h1 {
+    border: 1px solid green;
+    color: green;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+footer {
+    /* border: 2px solid black; */
+    height: 10vh;
+    background-color: rgb(62, 175, 62);
+    color: white;
+    text-align: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1140px){
+    .header-sectwo {
+        flex-direction: column;
+       display: grid;
+        gap: 15px;
+        height: 120px;
+        background: rgba(0,0,0,0.5);
+        margin-top: 100px;
+        font-size: 20px;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+       
+    }     
+}
+@media screen and (max-width: 815px){
+.cards {
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   padding: 0 2%;
+   margin-top: 3em;
+   gap: 20px;
+}
+}
+
+@media screen and (max-width: 480px){
+    .logo {
+        flex-direction: column;
+        padding: 20px 5%;
+        /* display: flex; */
+        align-items: center;
+       gap: 5px;
+    }
+
+    .header-sectwo{
+        margin-top: 80px;
+        padding-left: 110px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .header-sectwo{
+        margin-top: 25px
+    }
+}
+
+@media screen and (max-width: 380px){
+    .header-sectwo{
+        height: 100px;
+       text-align: center;
+        font-size: 15px;
+        margin-top: 40px
+    }
+}
+
+@media screen and (max-width: 310px){
+    .header-sectwo{
+        
+        font-size: 10px;
+        height: 100px;
+       text-align: center;
+        font-size: 15px;
+    }
+}
